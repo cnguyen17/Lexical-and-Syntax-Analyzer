@@ -18,10 +18,9 @@ object Token extends Enumeration {
   val FALSE           = Value
   val INTEGER         = Value
 
-  val BEGIN           = Value
+
   val END             = Value
-  val READ            = Value
-  val WRITE           = Value
+
 
   val OPERATOR        = Value
   val ADD_OP          = Value
@@ -32,7 +31,7 @@ object Token extends Enumeration {
   val LES_OP          = Value
   val EQU             = Value
 
-  val PUNCTUATOR      = Value
+
   val SEMI_COL        = Value
   val COL             = Value
   val PERIOD          = Value
@@ -46,9 +45,16 @@ object Token extends Enumeration {
   val META_IDENT      = Value
   val TERMINAL_STRING = Value
 
-  val IF              = Value
+
   val ELSE            = Value
   val THEN            = Value
-  val WHILE           = Value
+
   val DO              = Value
+
+  val IF              = Value
+  val READ            = Value
+  val WRITE           = Value
+  val WHILE           = Value
+  val ASSIGN_STMT     = Value
+  val BEGIN           = Value
 }

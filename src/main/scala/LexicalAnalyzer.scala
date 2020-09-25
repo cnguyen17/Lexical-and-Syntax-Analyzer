@@ -169,7 +169,7 @@ class LexicalAnalyzer(private var source: String) extends Iterable[LexemeUnit] {
               if (WORD_TO_TOKEN.contains(lexeme))
                 return new LexemeUnit(lexeme, WORD_TO_TOKEN.get(lexeme).get)
               else
-                return new LexemeUnit(lexeme, Token.PUNCTUATOR)
+                return new LexemeUnit(lexeme, Token.ASSIGN_STMT)
             }
 
             // TODO: recognize delimiters
