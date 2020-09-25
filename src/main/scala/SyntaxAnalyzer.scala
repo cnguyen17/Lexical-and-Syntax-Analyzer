@@ -202,13 +202,6 @@ class SyntaxAnalyzer(private var source: String) {
         lexemeUnit = null
         getLexemeUnit()
 
-//        else if (lexemeUnit.getToken() != Token.PIPE &&
-//          lexemeUnit.getToken() != Token.NEW_LINE &&
-//          lexemeUnit.getToken() != Token.CLOSE_PAR &&
-//            lexemeUnit.getToken() != Token.CLOSE_BRACE &&
-//            lexemeUnit.getToken() != Token.CLOSE_BRACKET
-//        )
-//          throw new Exception("Syntax Analyzer Error: valid term expected!")
         tree
       }
 
@@ -234,6 +227,13 @@ class SyntaxAnalyzer(private var source: String) {
           throw new Exception("Syntax Analyzer Error: meta identifier expected!")
         tree
       }
+  //        else if (lexemeUnit.getToken() != Token.PIPE &&
+  //          lexemeUnit.getToken() != Token.NEW_LINE &&
+  //          lexemeUnit.getToken() != Token.CLOSE_PAR &&
+  //            lexemeUnit.getToken() != Token.CLOSE_BRACE &&
+  //            lexemeUnit.getToken() != Token.CLOSE_BRACKET
+  //        )
+  //          throw new Exception("Syntax Analyzer Error: valid term expected!")
 
       // read_stmt = ´read´ identifier
       private def parseread_Stmt() = {
